@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Fira+Sans:wght@400;700&family=Kablammo&family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+   </head>
+
+<body>
+    <div class="ImageSector">
+        <img class='imgBack' src="jeep.jpg" alt="imagen de un jeep">
+        <div class="logoBackground">
+            <img class='logo' src="logo sin fondo.png" alt="Logo Hotel Riviera">
+        </div>
+    </div>
+    <div class="textArea">
+        <h2>Pagina de inicio de sesion de prueba. Debe ser rehecha con los datos necesarios para el check-in online del Hotel Riviera</h2>
+        <form action="get">
+            <div class="fondoBlanco">
+                <h2 class="Datos">Danos tus datitos</h2>
+                <div class="inputBackground">
+                
+                    <div class="inputContainer">
+                    <label for="first-name">Nombre</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                
+                    <div class="inputContainer">
+                        <label for="last-name">Apellido</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div class="inputContainer">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="inputContainer">
+                        <label for="phone-number">Celu</label>
+                        <input type="tel" id="phone-number" name="phone-number" required>
+                    </div>
+                    <div class="inputContainer">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" name="password" required>
+                        <small id="confirmPassword-feedback">Las contraseñas no coinciden</small>
+                    </div>
+                    <div class="inputContainer">
+                        <label for="confirm-password">Confirmame la Pass</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                </div>
+            </div>
+
+            <button class="submit" type="submit" value="submit"> Create Account</button>
+            
+        </form>
+        
+        <p class="registered">Ya estas registrado? <a href="#">Hace click aca</a>.</p>
+    </div>
+
+<script>
+    
+    let password = document.getElementById("password");
+    let confirmPassword = document.getElementById("confirm-password");
+    let passwordError = document.getElementById('confirmPassword-feedback')
+
+   function checkPasswordMatch(pass1, pass2) {
+
+    if (pass1.value === pass2.value) {
+        // Las contraseñas coinciden
+        return true;
+    } else {
+        // Las contraseñas no coinciden
+        return false;
+    }
+}
+
+password.addEventListener('input', () => {
+    if (checkPasswordMatch(password, confirmPassword) || !password.value || !confirmPassword.value) {
+        password.classList.remove('error');
+        confirmPassword.classList.remove('error');
+        passwordError.style.display = 'none';
+    }
+    else {
+        if (password.value && confirmPassword.value) {
+        password.classList.add('error');
+        confirmPassword.classList.add('error');
+        passwordError.style.display = 'block';}
+    }
+})
+
+confirmPassword.addEventListener('input', () => {
+    if (checkPasswordMatch(password, confirmPassword) || !password.value || !confirmPassword.value) {
+        password.classList.remove('error');
+        confirmPassword.classList.remove('error');
+        passwordError.style.display = 'none';
+    }
+    else {
+        if (password.value && confirmPassword.value) {
+        password.classList.add('error');
+        confirmPassword.classList.add('error');
+        passwordError.style.display = 'block';}
+    }
+})
+
+
+
+
+</script>
+
+</body>
+</html>

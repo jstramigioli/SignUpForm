@@ -1,0 +1,183 @@
+font-family: 'Exo 2', sans-serif;
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Kablammo', cursive;
+font-family: 'Overpass', sans-serif;
+
+body,html {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --colorDeFondo: #f5f5f5; /* Define la variable de color y asigna el valor */
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+.ImageSector {
+position: relative;
+width: auto;
+height: 100vh;
+}
+
+.imgBack {
+    height: 100%;
+}
+
+.logoBackground {
+    position: absolute;
+    background-color: rgb(255, 255, 255, 0.5);
+    width: 100%;
+    height: 180px;
+    top: 100px;
+    left: 0%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 300px;
+    opacity: 1;
+}
+
+.textArea {
+    width: auto;
+    background-color: var(--colorDeFondo);
+}
+
+h2 {
+    font-family: 'Exo 2', sans-serif;
+    width: auto;
+    height: 280px;
+    background-color:var(--colorDeFondo);
+    margin: 0;
+    padding: 20px 40px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+form {
+
+    
+    
+}
+
+.inputBackground {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 100%;
+    padding: 40px;
+    padding-top: 10px;
+    
+}
+
+.inputContainer {
+    margin-right: 100px;
+    margin-top: 10px;
+    position: relative;
+}
+
+label {
+    display: block;
+    width: 150px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+}
+
+input {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0.6em;
+    padding-top:  0.8em;
+    height: 2em;
+    width: 220px;
+    border-radius: 4px;
+    font-family: 'Overpass', sans-serif;
+    border-color: rgb(141, 141, 141);
+    border-style: solid;
+    border-width: 1px;
+}
+
+
+
+.submit {
+    background-color: darkolivegreen;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 8px;
+    border-style: none;
+    border-width: 1px;
+    height: 50px;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.submit:hover {
+    border-width: 3px;
+    background-color: rgb(98, 122, 56);
+    cursor: pointer;
+}
+
+input:focus {
+    border-color: dodgerblue;
+    border-width: 2px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.error {
+    border-color: crimson;
+}
+
+#confirmPassword-feedback {
+    position: absolute;
+    left: 10px;
+    top: 50px;
+    color: brown;
+    font-family: 'Fira Sans', sans-serif;;
+    display: none;
+}
+
+.Datos {
+    background-color: white;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.fondoBlanco {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.registered {
+    font-family: 'Fira Sans', sans-serif;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+a {
+    color: darkolivegreen;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
